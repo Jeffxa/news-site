@@ -1,7 +1,6 @@
-import { Inter } from "next/font/google";
 import Head from "next/head";
+import Layout from "/components/Layout"
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -10,7 +9,11 @@ export default function Home() {
         <title>News Site</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-9xl text-red">Hola desde next</h1>
+
+      <Layout>
+        Creampie dentro del Layout
+      </Layout>
+  
     </div>
   );
 }
