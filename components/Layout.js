@@ -65,6 +65,10 @@ export default function Layout({ children }) {
           <spam>Vision</spam>
           <spam>Project VisQ</spam>
         </div>
+        <div className="my-10 text-sm max-w-2xl">
+          Code 911 is a open-media intiative by Xmedia Gcorp, NIC © and is
+          registered as
+        </div>
       </div>
     </div>
   );
