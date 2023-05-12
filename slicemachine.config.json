@@ -1,0 +1,5 @@
+{
+  "repositoryName": "news-nextjs",
+  "adapter": "@slicemachine/adapter-next",
+  "libraries": ["./slices"]
+}

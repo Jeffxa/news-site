@@ -67,7 +67,9 @@ export default function Layout({ children }) {
         </div>
         <div className="my-10 text-sm max-w-2xl">
           Code 911 is a open-media intiative by Xmedia Gcorp, NIC © and is
-          registered as
+          registered as not for profit organization. All rights reserved. &copy;
+          &nbsp;
+          {new Date().getFullYear()}
         </div>
       </div>
     </div>
