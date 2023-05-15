@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "/components/Layout";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,71 +10,89 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout className="flex items-center justify-center h-screen">
-        <div className="text-xl mx-auto max-w-[900px]">
-          <h1 className="text-center text-6xl my-20">
-            Lorem ipsum dolor sit amet
-          </h1>
-
-          <p className="text-xl md:text-2xl mx-4  pb-10 leading-9 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            sapien sapien, malesuada non massa sit amet, pulvinar pulvinar
-            justo. Vivamus sed suscipit ex, at interdum augue. Proin odio quam,
-            vehicula sed consectetur non, pulvinar non nisl. Maecenas volutpat
-            condimentum turpis. Quisque eu lorem vitae libero viverra interdum
-            eu sit amet enim. Sed dignissim dui id sapien tristique, nec
-            fringilla libero aliquet. Nullam et urna vel orci rhoncus molestie.
-            Aliquam erat volutpat. Mauris congue luctus elementum. Proin
-            vestibulum nisi nec pretium tincidunt. Mauris accumsan augue lectus,
-            vitae ultrices arcu gravida ac. Pellentesque habitant morbi
-            tristique senectus et netus et malesuada fames ac turpis egestas.
-            Cras quis tellus sit amet ligula euismod sodales viverra at neque.
-            Sed vitae libero maximus, viverra erat id, luctus urna. Donec
-            accumsan rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Donec dolor
-            massa, lobortis sed leo quis, dapibus vehicula elit. Praesent
-            consequat at odio a laoreet. In ultricies placerat risus sit amet
-            tempor. Etiam non ipsum eget turpis sodales iaculis sit amet sed
-            lorem. Ut at lobortis augue. Etiam eget porttitor erat, quis
-            hendrerit ligula. Duis nec purus non nisi gravida cursus a ac augue.
-            Vivamus tempus accumsan vehicula. Phasellus ornare, mauris ut
-            porttitor eleifend, nibh tortor faucibus metus, ut efficitur ante
-            ipsum in massa. Aenean consectetur tempor magna vitae interdum. Ut
-            pulvinar mauris id ex condimentum, id sagittis libero rutrum.
-            Suspendisse cursus consequat tortor, et vulputate ante sodales in.
-            Suspendisse finibus mauris sit amet sollicitudin egestas. Nullam
-            enim risus, consectetur non est sit amet, elementum euismod urna.
-            Nunc ac elit nec ipsum varius hendrerit. <br /> <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            sapien sapien, malesuada non massa sit amet, pulvinar pulvinar
-            justo. Vivamus sed suscipit ex, at interdum augue. Proin odio quam,
-            vehicula sed consectetur non, pulvinar non nisl. Maecenas volutpat
-            condimentum turpis. Quisque eu lorem vitae libero viverra interdum
-            eu sit amet enim. Sed dignissim dui id sapien tristique, nec
-            fringilla libero aliquet. Nullam et urna vel orci rhoncus molestie.
-            Aliquam erat volutpat. Mauris congue luctus elementum. Proin
-            vestibulum nisi nec pretium tincidunt. Mauris accumsan augue lectus,
-            vitae ultrices arcu gravida ac. Pellentesque habitant morbi
-            tristique senectus et netus et malesuada fames ac turpis egestas.
-            Cras quis tellus sit amet ligula euismod sodales viverra at neque.
-            Sed vitae libero maximus, viverra erat id, luctus urna. Donec
-            accumsan rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Donec dolor
-            massa, lobortis sed leo quis, dapibus vehicula elit. Praesent
-            consequat at odio a laoreet. In ultricies placerat risus sit amet
-            tempor. Etiam non ipsum eget turpis sodales iaculis sit amet sed
-            lorem. Ut at lobortis augue. Etiam eget porttitor erat, quis
-            hendrerit ligula. Duis nec purus non nisi gravida cursus a ac augue.
-            Vivamus tempus accumsan vehicula. Phasellus ornare, mauris ut
-            porttitor eleifend, nibh tortor faucibus metus, ut efficitur ante
-            ipsum in massa. Aenean consectetur tempor magna vitae interdum. Ut
-            pulvinar mauris id ex condimentum, id sagittis libero rutrum.
-            Suspendisse cursus consequat tortor, et vulputate ante sodales in.
-            Suspendisse finibus mauris sit amet sollicitudin egestas. Nullam
-            enim risus, consectetur non est sit amet, elementum euismod urna.
-            Nunc ac elit nec ipsum varius{" "}
-            <span className="text-red-600">Fin del contenido</span>.
-          </p>
+      <Layout>
+        <div className="mt-20 m-auto flex  justify-center">
+          <div className="px-4 border border-silver-500 shadow-lg shadow-silver-500 max-w-[1000px]">
+            <Image
+              className="mt-4"
+              src={
+                "https://c4.wallpaperflare.com/wallpaper/910/914/394/the-darkness-bones-skeleton-fingers-wallpaper-preview.jpg"
+              }
+              width={750}
+              height={400}
+              layout="responsive"
+              alt={"Belsinski"}
+            />
+            <h1 className="text-6xl text-center mt-6">Lorem Ipsum</h1>
+            <hr className="h-px my-6 bg-black border-0 w-6/12 m-auto" />
+            <p className="my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              condimentum posuere volutpat. Curabitur id tincidunt turpis. Fusce
+              in est nisl. Aliquam erat volutpat. Fusce ac cursus magna.
+              Curabitur quam lacus, fringilla non purus eget, accumsan placerat
+              diam. Quisque eu massa vitae magna tincidunt egestas sit amet a
+              elit. Sed ultrices urna mauris, non sollicitudin risus ullamcorper
+              ac. Vestibulum feugiat posuere mauris, quis vehicula tortor
+              feugiat ut. Mauris placerat elit vitae lorem feugiat, non
+              tristique nisl volutpat. Praesent imperdiet efficitur lorem, at
+              eleifend ex ullamcorper non. Morbi aliquet at sem accumsan
+              tincidunt. Morbi gravida ipsum sed eros ultricies, non semper quam
+              porta. Maecenas neque magna, pretium vitae velit vel, placerat
+              egestas ipsum. Proin fringilla sem et velit tristique feugiat.
+              Donec tincidunt ligula enim, nec ullamcorper dolor faucibus id.
+            </p>
+            <Image
+              className="mx-auto object-contain py-6"
+              src={
+                "https://c4.wallpaperflare.com/wallpaper/910/914/394/the-darkness-bones-skeleton-fingers-wallpaper-preview.jpg"
+              }
+              width={650}
+              height={400}
+              alt={"Belsinski"}
+            />
+            <p className="my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              condimentum posuere volutpat. Curabitur id tincidunt turpis. Fusce
+              in est nisl. Aliquam erat volutpat. Fusce ac cursus magna.
+              Curabitur quam lacus, fringilla non purus eget, accumsan placerat
+              diam. Quisque eu massa vitae magna tincidunt egestas sit amet a
+              elit. Sed ultrices urna mauris, non sollicitudin risus ullamcorper
+              ac. Vestibulum feugiat posuere mauris, quis vehicula tortor
+              feugiat ut. Mauris placerat elit vitae lorem feugiat, non
+              tristique nisl volutpat. Praesent imperdiet efficitur lorem, at
+              eleifend ex ullamcorper non. Morbi aliquet at sem accumsan
+              tincidunt. Morbi gravida ipsum sed eros ultricies, non semper quam
+              porta. Maecenas neque magna, pretium vitae velit vel, placerat
+              egestas ipsum. Proin fringilla sem et velit tristique feugiat.
+              Donec tincidunt ligula enim, nec ullamcorper dolor faucibus id.
+            </p>
+            <Image
+              className="mx-auto object-contain py-6"
+              src={
+                "https://c4.wallpaperflare.com/wallpaper/605/739/791/zdzislaw-beksinski-embrace-wallpaper-preview.jpg"
+              }
+              width={650}
+              height={400}
+              alt={"Belsinski"}
+            />
+          </div>
+          <div className="ml-5 px-4 border border-silver-500 shadow-lg shadow-silver-500 max-w-[400px]">
+            <h3 className="text-4xl text-center mt-3">Lasted Posts</h3>
+            <hr className="h-px my-6 bg-black border-0 w-6/12 m-auto" />
+            <Image
+              src={
+                "https://c4.wallpaperflare.com/wallpaper/356/357/68/zdzislaw-beksinski-stranded-wallpaper-preview.jpg"
+              }
+              width={750}
+              height={400}
+              layout="responsive"
+              alt={"Belsinski"}
+            />
+            <h4 className="text-2xl my-4">Belsinski Art</h4>
+            <p>
+              Donec tincidunt ligula enim, nec ullamcorper dolor faucibus id.
+            </p>
+          </div>
         </div>
       </Layout>
     </div>

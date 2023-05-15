@@ -46,7 +46,7 @@ export default function Layout({ children }) {
         </Link>
       </div>
       {children}
-      <div className="bg-black text-white text-xl py-10 px-24 flex flex-col">
+      <div className="bg-black text-white text-xl py-10 px-24 mt-20 flex flex-col">
         <div>
           <Link href="/" legacyBehavior>
             <a className="text-white uppercase  text-2xl flex align-baseline px-10 my-auto">
@@ -65,7 +65,7 @@ export default function Layout({ children }) {
           <spam>Vision</spam>
           <spam>Project VisQ</spam>
         </div>
-        <div className="my-10 text-sm max-w-2xl">
+        <div className="my-10 pt-20 text-sm max-w-2xl">
           Code 911 is a open-media intiative by Xmedia Gcorp, NIC © and is
           registered as not for profit organization. All rights reserved. &copy;
           &nbsp;
